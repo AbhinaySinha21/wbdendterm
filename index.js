@@ -32,6 +32,6 @@ app.use(tweetroute)
 app.use(express.static(__dirname+'/public'));
 
 
-app.listen(3500,()=>{
+app.listen(process.env.PORT || 3500,()=>{
     console.log("server is running");
 })
